@@ -1,0 +1,6 @@
+set title 'compute_pi'
+set xlabel 'time'
+set ylabel 'iteration'
+set terminal png
+set output 'plot.png'
+plot 'base.txt', 'avxsimd_v1.txt', 'avxsimd_v2.txt', 'avxsimd_v3.txt'
