@@ -110,10 +110,10 @@ int main(int argc, char *argv[])
 #elif defined(BASE)
 		compute_pi_base(128000000);
 #endif
-	clock_gettime(CLOCK_MONOTONIC, &timespec);
-	end_time = timespec.tv_sec + 
-	       		((double)(timespec.tv_nsec / 10000)) / 100000;
-	printf("%zu %lf\n", i, end_time - start_time);
+		clock_gettime(CLOCK_MONOTONIC, &timespec);
+		end_time = timespec.tv_sec + 	
+			((double)(timespec.tv_nsec / 10000)) / 100000;
+		printf("%zu %lf\n", i, end_time - start_time);
 	}
 
 	//printf("total time elapsed : %lfs\n", end_time - start_time);
